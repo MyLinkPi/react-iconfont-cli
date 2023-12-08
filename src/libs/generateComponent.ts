@@ -137,7 +137,7 @@ const addAttribute = (domName: string, sub: XmlData['svg']['symbol'][number]['pa
     if (ATTRIBUTE_FILL_MAP.includes(domName)) {
       // Set default color same as in iconfont.cn
       // And create placeholder to inject color by user's behavior
-      sub.$.fill = sub.$.fill || '#333333';
+      sub.$.fill = sub.$.fill || 'currentColor';
     }
 
     for (const attributeName of Object.keys(sub.$)) {
